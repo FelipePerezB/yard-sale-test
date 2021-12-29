@@ -31,7 +31,7 @@
     margin: 4%;
 }
 
-.button__login{
+.button a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,15 +40,15 @@
     border-radius: 8px;
     background-color: var(--white);
     text-decoration: none;
+    color: var(--hospital-green);
 }
 
-.button .button__login:nth-child(1){
-    background-color: var(--hospital-green);
+.button .button__login--active{
+    background-color: var(--hospital-green); 
     color: var(--white);
 }
 
 .button .button__login:nth-child(3){
     margin-top: 8vh;
-    color: var(--hospital-green);
     border: solid 2px var(--hospital-green);
 }
