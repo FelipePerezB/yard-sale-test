@@ -14,7 +14,7 @@ body{
     --font-title: "Quicksand" 
 }
 .inicio{
-    margin: 12vh;
+    margin: 8vh;
     display: flex;
     justify-content: center;
 }
