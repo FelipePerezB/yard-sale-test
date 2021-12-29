@@ -27,6 +27,7 @@
 
 .form__label{
     font-family: var(--font-title);
+    font-weight: 700;
 }
 
 .button{
@@ -53,8 +54,11 @@
 }
 
 .button .button__login--borde{
-    margin-top: 8vh;
     border: solid 2px var(--hospital-green);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2vh;
+    width: 92%;
 }
 
 .resend{

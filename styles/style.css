@@ -10,28 +10,41 @@ body{
     --black: #000000;
     --dark: #232830;
 
+    --sangria: 4vw;
 
-    --font-title: "Quicksand" 
+    --font-title: "Quicksand";
 }
 
 
+.navar{
+    box-sizing: border-box;
+    font-size: 0.6em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 3px var(--text-input-field);
 
+}
+.navar__logo{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.navar .inicio{
+    margin: 0;
+}
 
 .inicio{
     margin: 8vh;
     display: flex;
     justify-content: center;
+    font-family: var(--font-title);
 }
 
-.inicio .inicio__title--active{
+.inicio__title--active{
     color: var(--hospital-green);
     margin-left: 0.25em;
     margin-right: 0.25em;
 }
-.inicio h1{
-    font-family: var(--font-title);
-}
-
 
 
 
@@ -46,6 +59,8 @@ body{
 .mensaje__content--active{
     font-weight: 700;
 }
+
+
 
 .imagen{
     margin: 20%;
@@ -66,4 +81,25 @@ body{
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: rgba(128, 128, 128, 0.04);
+}
+
+.account__mensaje{
+    margin-top: 12%;
+    margin-bottom: 12%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+.button .button__login--create{
+    font-family: var(--font-title);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2vh;
+    width: 92%;
+    background-color: var(--hospital-green); 
+    color: var(--white);
 }
