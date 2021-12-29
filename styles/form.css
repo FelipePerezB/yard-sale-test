@@ -25,6 +25,10 @@
     margin-bottom: 2vh;
 }
 
+.form__label{
+    font-family: var(--font-title);
+}
+
 .button{
     display: flex;
     flex-direction: column;
