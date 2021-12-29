@@ -26,15 +26,20 @@
 }
 
 .button{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin: 4%;
 }
 
 .button__login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 4rem;
     border-width: 0;
     border-radius: 8px;
     background-color: var(--white);
+    text-decoration: none;
 }
 
 .button .button__login:nth-child(1){
