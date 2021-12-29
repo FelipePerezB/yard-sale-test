@@ -19,11 +19,11 @@ body{
     justify-content: center;
 }
 
-section h1:nth-child(2){
+.inicio .inicio__title--active{
     color: var(--hospital-green);
     margin-left: 0.25em;
     margin-right: 0.25em;
 }
-.inicio__title{
+.inicio h1{
     font-family: var(--font-title);
 }
