@@ -1,0 +1,26 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+
+
+    --font-title: "Quicksand" 
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+}
+
+.form__input{
+    border-radius: 8px;
+    border-width: 0;
+    background-color: var(--text-input-field);
+    height: 2rem;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
