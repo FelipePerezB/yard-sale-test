@@ -52,7 +52,17 @@
     color: var(--white);
 }
 
-.button .button__login:nth-child(3){
+.button .button__login--borde{
     margin-top: 8vh;
     border: solid 2px var(--hospital-green);
+}
+
+.resend{
+    display: flex;
+    justify-content: center;
+}
+
+.resend .button__login--resend{
+    margin-right: 0.5em;
+    color: #C7C7C7;
 }
