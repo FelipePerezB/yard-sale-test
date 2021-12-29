@@ -5,5 +5,24 @@
     --white: #FFFFFF;
     --black: #000000;
     --dark: #232830;
+
+
+    --title: "Quicksand" 
 }
 
+.inicio{
+    display: flex;
+    justify-content: center;
+}
+
+h1[class="inicio__title"]{
+    margin: 0 0 0 0.4rem;
+}
+
+section h1:nth-child(2){
+    color: var(--hospital-green);
+}
+
+.inicio__title{
+    font-family: var(--title);
+}
