@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 :root {
     --very-light-pink: #C7C7C7;
     --text-input-field: #F7F7F7;
@@ -7,22 +11,20 @@
     --dark: #232830;
 
 
-    --title: "Quicksand" 
+    --font-title: "Quicksand" 
 }
 
 .inicio{
+    margin: 12vh;
     display: flex;
     justify-content: center;
 }
 
-h1[class="inicio__title"]{
-    margin: 0 0 0 0.4rem;
-}
-
 section h1:nth-child(2){
     color: var(--hospital-green);
+    margin-left: 0.25em;
+    margin-right: 0.25em;
 }
-
 .inicio__title{
-    font-family: var(--title);
+    font-family: var(--font-title);
 }
