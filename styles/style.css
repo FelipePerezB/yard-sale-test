@@ -10,6 +10,7 @@ body{
     margin: 4%;
 }
 
+
 :root {
     --very-light-pink: #C7C7C7;
     --text-input-field: #F7F7F7;
@@ -20,6 +21,11 @@ body{
 }
 /* Roots */
 
+@media (max-width:450px){
+    .navar-pc .navar{
+        display: none;
+    }    
+}
 
 .navar{
     box-sizing: border-box;
@@ -27,9 +33,8 @@ body{
     display: flex;
     justify-content: space-between;
     border-bottom: solid 3px var(--text-input-field);
-    padding-right: 4%;
-    padding-left: 4%;
-
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .navar .inicio{
@@ -66,10 +71,17 @@ body{
 }
 
 a{
-    text-align: center;
-    color: var(--hospital-green);
-    margin: 2rem;
     text-decoration: none;
+    color: var(--hospital-green);
+}
+
+.resend-link{
+    margin-left: 1ch;
+}
+
+.link-button{
+    text-align: center;
+    margin: 2rem;
 }
 
 .text--center{
@@ -82,35 +94,26 @@ a{
     margin: 1rem;
 }
 
-.mensaje a{
-    margin: 1rem;
-}
+
  
 
 
 /* Texto */
 
 .imagen{
-    margin: 10vh;
+    margin: 5vh auto 5vh;
+    width: 8rem;
+    height: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.circulo {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
+    background-color: rgba(71, 71, 71, 0.04);
     border-radius: 50%;
-    background: rgba(128, 128, 128, 0.04);
 }
 
 .account-text{
-    margin-top: 8vh;
-    margin-bottom: 8vh;
+    margin-top: 4%;
+    margin-bottom: 8%;
 }
 
 
@@ -118,11 +121,12 @@ a{
 .form{
     display: flex;
     flex-direction: column;
+    /* width: 92%; */
 }
 
 .form__input{
     border-radius: 8px;
-    border-width: 0;
+    border: none;
     background-color: var(--text-input-field);
     height: 2rem;
     margin-bottom: 1vh;
@@ -138,10 +142,11 @@ input[disabled="disabled"]{
     margin-top: 2vh;
     font-size: 1rem;
     height: 4rem;
-    border-width: 0;
+    border: none;
     border-radius: 8px;
     color: var(--hospital-green);
     width: 100%;
+    cursor: pointer;
 }
 
 .button__login--active{
@@ -239,3 +244,29 @@ input[disabled="disabled"]{
     bottom: 5%;
 }
 
+@media (min-width: 450px) {
+    .body{
+        display: grid;
+        place-items: center;
+    }
+
+    .form{
+        width: 440px;
+        display: flex;
+
+    }
+
+    .body >.inicio{
+        display: none;
+    }
+    
+
+    .bajar__button{
+        width: 440px;
+    }
+
+    .account-text{
+        margin-top: 1%;
+        margin-bottom: 4%;
+    }
+}
