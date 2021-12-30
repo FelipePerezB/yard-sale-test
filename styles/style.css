@@ -265,8 +265,12 @@ input[disabled="disabled"]{
 .menu li{
     padding: 1rem 1rem ;
     text-align: end;
+}
+
+li{
     list-style: none;
 }
+
 ul{
     margin: 0;
     padding: 0;
@@ -277,6 +281,19 @@ ul{
     display: block;
     border-top: 2px solid var(--text-input-field);
     width: 100%;
+}
+
+.menu-mobile a{
+    display: inline-block;
+    margin-top: 3vh;
+    font-weight: 800;
+}
+
+.account-info{
+    font-size: 0.9rem;
+    font-weight: 300;
+    position: absolute;
+    bottom: 4%;
 }
 
 @media (min-width: 450px) {
