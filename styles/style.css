@@ -6,10 +6,12 @@
     --black: #000000;
     --dark: #232830;
 
-    
+    --roboto: 'Roboto', sans-serif;
+  
 }
+
 *{
-    font-family: "Quicksand";
+    font-family: "Quicksand", sans-serif;
 }
 
 body{
@@ -189,7 +191,7 @@ input[disabled="disabled"]{
 .prductos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .producto{
@@ -217,7 +219,7 @@ input[disabled="disabled"]{
 
 .texto--300{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--roboto);
     font-size: 10pt;
     font-weight: 300;
     /* background-color: cadetblue; */
