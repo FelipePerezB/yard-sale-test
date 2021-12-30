@@ -38,7 +38,7 @@ body{
 /* Navar */
 
 .inicio{
-    margin: 8vh;
+    margin: 8%;
     display: flex;
     justify-content: center;
 }
@@ -193,7 +193,7 @@ button{
 }
 
 
-html{
+.body{
     margin: 4%;
 
 }
