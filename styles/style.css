@@ -27,8 +27,8 @@ body{
 /* Roots */
 
 
-
 .navar{
+    height: 3rem;
     box-sizing: border-box;
     font-size: 0.6em;
     display: flex;
@@ -42,10 +42,16 @@ body{
     margin: 0;
 }
 
+.navar__logo{
+    width: 2rem;
+    /* background-color: cadetblue; */
+}
+.navar__categories{
+    display: none;
+}
 /* Navar */
 
 .inicio{
-    margin: 7vh;
     display: flex;
     justify-content: center;
 }
@@ -59,6 +65,10 @@ body{
     margin-left: 0.25em;
     margin-right: 0.25em;
 }
+
+/* .inicio__title--pagina{
+    margin: auto;
+} */
 
 /* Texto */
 
@@ -170,10 +180,6 @@ input[disabled="disabled"]{
 .button__login--create{
     font-size: 1rem;
 }
-
-
-
-
 
 /* .form__input::placeholder{
     font-family: var(--font-title);
@@ -350,11 +356,143 @@ ul{
     right: 1rem;
 }
 
+.articulo__flecha{
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+}
+
+.articulos__info--fecha-articulos{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+
+}
+
+.orders-title{
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    margin-left: 1rem;
+}
+
+.navar__correo-img{
+    display: none;
+}
+
+.navar__categories{
+    display: none;
+    position: absolute;
+    margin: 1rem;
+    left: 8rem;
+    font-size: 0.9rem;
+}
+
+.navar__categories a:hover{
+    color: var(--hospital-green);
+    border: 2px solid var(--hospital-green);
+    border-radius: 6px;
+}
+
+
+.navar-pc{
+    display: none;
+}
+
+.detalle-articulo{
+    height: 85vh;
+}
+
+.detalle-articulo-img{
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 30px;
+}
+
+.detalle-articulo-precio{
+    margin-bottom: 0;
+}
+.detalle-articulo-descripcion{
+    margin: 1rem 0 0;
+}
+.detalle-articulo-carrito{
+    width: 3rem;
+}
+
+.detalle-articulo .button{
+    display: flex;
+    align-items: center;
+    place-content: center;
+    position: absolute;
+    width: 92%;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+
+
+.inicio--title{
+    display: none;
+}
+
+.navar-title{
+    display: none;
+}
+
+
+@media(min-width:750px){
+    .navar__categories{
+        display: flex;
+    }
+
+}
+
+@media(max-height:600px){
+    .detalle-articulo .button{
+        position: relative;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+}
+    
+
+    /* .navar__categories a:hover{
+        color: var(--hospital-green);
+        background-color: var(--hospital-green);
+    } */
 
 
 
 
 @media (min-width: 450px) {
+    .page-title{
+        display: none;
+    }
+    .inicio--title{
+        display: flex;
+    }
+    
+    .navar-title{
+        display: initial;
+    }
+
+    .detalle-articulo .button{
+        width: 420px;
+    }
+    .detalle-articulo{
+        width: 420px;
+    }
+
+    .body .inicio--title{
+        position: relative;
+    }
+    .body .inicio{
+        display: none;
+    }
+
+    .navar-pc{
+        display: initial;
+    }
+
     .articulos__info{
         width: 420px;
     }
@@ -374,8 +512,47 @@ ul{
 
     }
 
-    .body >.inicio{
+    .navar__correo-img{
+        display: initial;
+    }
+
+
+    .navar__categories a{
+        color: var(--very-light-pink);
+    }
+
+    .navar__categories--item{
+        margin-left: 0.5rem;
+    }
+
+    .navar__correo{
+        font-weight: 300;
+        font-size: 0.9rem;
+        position: absolute;
+        right: 4rem;
+        top: 1rem;
+    }
+
+    .navar__correo-flecha{
+        position: absolute;
+        right: 3.3rem;
+        top: 1.2rem;
+        /* background-color: cadetblue; */
+    }
+
+    .inicio{
+        position: absolute;
+        left: 1rem;
+    }
+
+    img[src="media/icon_menu.svg"]{
         display: none;
+    }
+
+    .carrito{
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
     }
     
 
@@ -387,7 +564,6 @@ ul{
         margin-top: 1%;
         margin-bottom: 4%;
     }
-
 }
 
 @media (max-width:450px){
